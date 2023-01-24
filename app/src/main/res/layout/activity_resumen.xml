@@ -21,22 +21,74 @@
         android:id="@+id/imageView3"
         android:layout_width="123dp"
         android:layout_height="117dp"
-        app:layout_constraintVertical_bias="0.2"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.2"
         app:srcCompat="@drawable/inicio" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="123dp"
         android:layout_height="117dp"
-        app:layout_constraintVertical_bias="0.2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.2"
         app:srcCompat="@drawable/inicio" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/clase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/texto"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/raza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/texto"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/texto" />
+
+    <Button
+        android:id="@+id/continuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="empezar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/texto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

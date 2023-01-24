@@ -16,29 +16,35 @@ class MainActivity : AppCompatActivity() {
 
     fun cambiarImagenes(binding: ActivityMainBinding){
         var imagen=0
+        var clase=""
 
         binding.guerrero.setOnClickListener{
             binding.imageView.setImageResource(R.drawable.guerrero)
             imagen=R.drawable.guerrero
+            clase="Guerrero"
         }
         binding.mago.setOnClickListener{
             binding.imageView.setImageResource(R.drawable.mago)
             imagen=R.drawable.mago
+            clase="Mago"
         }
 
         binding.ladron.setOnClickListener{
             binding.imageView.setImageResource(R.drawable.ladron)
             imagen=R.drawable.ladron
+            clase="Ladrón"
         }
 
         binding.clerigo.setOnClickListener{
             binding.imageView.setImageResource(R.drawable.clerigo)
             imagen=R.drawable.clerigo
+            clase="Clérigo"
         }
 
         binding.aceptar.setOnClickListener {
             val intent= Intent(this, Razas::class.java)
-            intent.putExtra("CLASE", imagen)
+            intent.putExtra("CLASE_STRING", clase)
+            intent.putExtra("CLASE_IMAGEN", imagen)
             startActivity(intent)
         }
 
